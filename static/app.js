@@ -689,8 +689,8 @@ const renderMap = () => {
      }
     }
     if (playerObj.health != null) {
-      label += `|血:${Math.floor(playerObj.health)}|`
-    }
+      label += `|@:${Math.floor(playerObj.health)}|`
+    }    
     feature.set('_label', label)
     // re-add should be fine
     playerSource.addFeature(feature)
